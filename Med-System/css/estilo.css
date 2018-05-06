@@ -1,0 +1,114 @@
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > 
+.active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus, 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > 
+.open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #029B81;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+    color: #FFFFFF;
+    background-color: #029B81;
+}
+.wet-asphalt a:not(.btn):hover {
+    color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > li > a {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+    color: #029B81;
+    font-size: 18px;
+    font-family: "arial";
+}
+.navbar>.container .navbar-brand {
+    margin-left: -15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.logo {
+    width: 200px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #04B092;
+    border-color: #06A78A;
+}
+.btn-danger:hover {
+    background-color: #34495E;
+    border-color: #37345E;
+}
+.btn-danger:focus {
+    background-color: #34495E;
+    border-color: #37345E;
+}
+.portfolio-item .overlay {
+    background: rgba(46, 107, 164, 0.6);
+}
+.carousel-indicators .active {
+    background-color: rgba(3, 101, 151, 0.5);
+}
+
+.carousel-indicators li {
+    border: 1px solid #018D75;
+}
+#main-slider .carousel .item.active {
+    height: 650px;
+}
+#main-slider .carousel .item {
+        height: 650px;
+}
+#main-slider .carousel .boxed {
+    background-color: #468847;
+}
+@media screen and (min-width: 830px) {
+    #main-slider .carousel .display {
+        display: none;
+        background-color: #468847;
+    }
+}
+.btn-group {
+    margin-left: 90px;
+}
+.fa {
+    font-size: xx-large;
+}
+.pStyle {
+    text-align: justify;
+    line-height: 2;
+}
+.img-thumbnail:hover {
+    background-color: rgba(3, 167, 139, 0.43);
+}
+.emerald {
+    background-color: #03A78B;
+    padding-bottom: 30px;
+    padding-top: 60px;
+}
+.table {
+    width: 70%;
+    margin: auto;
+    border: 1px solid #B7B6B6;
+}
+th{
+    background-color: rgba(52, 73, 94, 0.63);
+    color: white;
+}
+.c1 {
+    background-color: #F3F3F3;
+}
+.c2 {
+    background-color: #E6E6E6;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    background-color: #0392A7;
+    border-radius: 0px 20px;
+    color: white;
+}
+a:hover, a:focus {
+    color: #0392A7;
+}
+.progress-bar-danger {
+    background-color: #038BA7;
+}
+.progress-bar:hover {
+    width: 91%;
+}

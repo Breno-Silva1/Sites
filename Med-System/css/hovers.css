@@ -1,0 +1,41 @@
+
+/* Efeitos */
+
+.zoom-tilt {
+  -webkit-transition:all 0.3s ease-out;
+  -moz-transition:all 0.3s ease-out;
+  -ms-transition:all 0.3s ease-out;
+  -o-transition:all 0.3s ease-out;
+  transition:all 0.3s ease-out;
+}
+
+.zoom-tilt:hover {
+  -webkit-transform:rotate(10deg) scale(0.9);
+  -moz-transform:rotate(10deg) scale(0.9);
+  -ms-transform:rotate(10deg) scale(0.9);
+  -o-transform:rotate(10deg) scale(0.9);
+  transform:rotate(10deg) scale(0.9);
+}
+
+/* Float */
+
+.float {
+  -webkit-transition:all .3s ease-out;
+  -moz-transition:all .3s ease-out;
+  -ms-transition:all .3s ease-out;
+  -o-transition:all .3s ease-out;
+  transition:all .3s ease-out;
+}
+
+.float:hover {
+  -webkit-transform:translate(0px,-10px);
+  -moz-transform:translate(0px,-10px);
+  -ms-transform:translate(0px,-10px);
+  -o-transform:translate(0px,-10px);
+  transform:translate(0px,-10px);
+}
+
+/* Grow */
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.05); }
