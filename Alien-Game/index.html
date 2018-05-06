@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <title>Alien Game</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <link rel="shortcut icon" href="img/icon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/deslizar.js"></script>
+  <script src="js/voltar-topo.js"></script>
+  <script src="js/validar-forms.js"></script>
+</head>
+<body>
+
+<!-- Menu -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand scroll" href="#topo">
+        <img src="img/logo-brand.png">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#topo" class="scroll">Home</a></li>
+        <li><a href="#sobre" class="scroll">O jogo</a></li>
+        <li><a href="#desenvolvedores" class="scroll">Desenvolvedores</a></li>
+        <li><a href="#codigo" class="scroll">Código</a></li>
+        <li><a href="#contato" class="scroll">Contato</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" data-toggle="modal" data-target="#myModalCadastro"><span class="glyphicon glyphicon-edit"></span> Cadastrar</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#myModalLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Banner -->
+<div id="topo" class="jumbotron">
+  <div class="container text-center">
+    <img id="logo" class="img-responsive w3-animate-zoom" src="img/logo.png">
+  </div>
+</div>
+
+<!-- Mídias -->
+<div id="midias">
+  <div class="row">
+    <div class="col-lg-4 callout linha-vertical w3-animate-right">
+      <i class="icon fa fa-facebook-square"></i>
+      <h3>Facebook</h3>
+      <p>Conheça nossa página no Facebook e fique por dentro das novas atualizações que estão por vir.
+        <br>
+        <i class="fa fa-angle-double-right"></i><a href="https://facebook.com/" target="_blank"> facebook.com/aliengame/</a>
+      </p><br>
+    </div>
+      
+    <div class="col-lg-4 callout linha-vertical">
+      <i class="icon fa fa-github"></i>
+      <h3>GitHub</h3>
+      <p> Todo o código do jogo está disponível na plataforma do GitHub para consulta e download.
+        <br>
+        <i class="fa fa-angle-double-right"></i><a href="https://github.com/" target="_blank"> github.com/aliengame/</a>
+      </p><br>
+    </div>
+    
+    <div class="col-lg-4 callout w3-animate-left">
+      <i class="icon fa fa-youtube-square"></i>
+      <h3>Youtube</h3>
+      <p> Acompanhe nossos vídeos e se inscreva no nosso canal do Youtube.
+        <br>
+        <i class="fa fa-angle-double-right"></i><a href="https://youtube.com/" target="_blank"> youtube.com/aliengame/</a>
+      </p><br>
+    </div>
+  </div>
+</div>
+  
+<!-- Sobre o Jogo -->
+  <div id="sobre">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 centered">
+          <iframe width="90%" height="350" src="https://www.youtube.com/embed/PX1dkUq0iQw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="center">
+          <div class="col-lg-4 align-center">
+            <h2 class="inform">Alien Game</h2>
+            <p>Trata-se de um jogo digital escrito na linguagem Ruby, como projeto de conclusão da disciplina de lógica de progrmação no curso de graduação em Tecnologia da Análise e Desenvolvimento de Sistemas.</p>
+            <p>O jogodor controla uma nave espacial e seu objetivo é destruir e se livrar dos asteroides e cometas que vêm em sua direção.</p>
+          </div>  
+        </div>        
+      </div>
+    </div>
+    <br>
+    <br>
+  </div>
+
+<!-- Desenvolvedores -->
+<div id="desenvolvedores">
+  <div class="container">    
+    <h2 class="inform titulo">Desenvolvedores</h2>
+    <div class="row">
+      <div class="col-lg-6 site-bg">
+        <div class="col-lg-4 centered">
+        <br>
+          <div class="desenvolvedor">
+            <p><img class="img img-circle" src="img/adlem.jpg" width="80px" height="80px"></p>
+            <h4>Fisioterapeuta</h4>
+            <i class="icon fa fa-twitter"></i>
+            <i class="icon fa fa-facebook"></i>
+            <i class="icon fa fa-instagram"></i>
+          </div>
+        </div>
+        <div class="col-lg-8 site-content">
+          <h2>Adlem Dutra</h2>
+          <p>Fisioterapeuta (UNP), pós-graduando em Psicomotricidade (UFRN), servido público - Prefeitura Muncpal de Natal e graduando em Análise e Desenvolvimento de Sistemas/IFRN, ama cozinhar, ter a casa só pra ele e não se classifica como nerd, apenas como um cara normal.</p>
+          <br>
+        </div>
+      </div>
+      <div class="col-lg-6 site-bg">
+        <div class="col-lg-4 centered">
+        <br>
+          <div class="desenvolvedor">
+            <p><img class="img img-circle" src="img/breno.jpg" width="80px" height="80px"></p>
+            <h4>Tecnico em Informática</h4>
+            <i class="icon fa fa-twitter"></i>
+            <i class="icon fa fa-facebook"></i>
+            <i class="icon fa fa-instagram"></i>
+          </div>
+        </div>
+        <div class="col-lg-8 site-content">
+          <h2>Breno Silva</h2>
+          <p>Tecnico em Informática (IFRN), graduando em Análise e Desenvolvimento de Sistemas/IFRN, clarinetista na banda da cidade de São Gonçalo do Amarante e fazendo o curso de Músico de Banda. Tem o design como seu principal hobbie, criando logos, cartazes, panfletos, entre outros.</p>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Código do jogo -->
+<div id="codigo">
+  <div class="container">
+  <h2 class="inform titulo titulo-inverse">Código do jogo</h2>    
+    <div class="row">
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#codigo4" aria-controls="codigo4" role="tab" data-toggle="tab">asteroide.rb</a></li>
+          <li role="presentation"><a href="#codigo2" aria-controls="codigo2" role="tab" data-toggle="tab">jogador.rb</a></li>
+          <li role="presentation"><a href="#codigo3" aria-controls="codigo3" role="tab" data-toggle="tab">laser.rb</a></li>
+          <li role="presentation"><a href="#codigo1" aria-controls="codigo1" role="tab" data-toggle="tab">alien-game.rb</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active rolamento" id="codigo4"></div>
+          <div role="tabpanel" class="tab-pane rolamento" id="codigo2"></div>
+          <div role="tabpanel" class="tab-pane rolamento" id="codigo3"></div>
+          <div role="tabpanel" class="tab-pane rolamento" id="codigo1"></div>
+          <script type="text/javascript" src="js/codigo-jogo.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!--Contato  -->
+  <section id="contato" class="row">
+    <div class="col-md-12">
+      <div class="container">
+        <h2 class="inform titulo">Contato</h2>
+        <div class="col-md-6">
+          <form name="form_contato" method="post">
+            <label>Nome*</label><br>
+            <input type="text" placeholder="Nome" name="nome_cont" class="form-control"><br>
+            <label>Email*</label><br>
+            <input type="email" class="form-control" name="email_cont" placeholder="Email@exemple.com"><br>
+            <label>Confirmar Email*</label><br>
+            <input type="email" class="form-control" name="email_cont2" placeholder="Email@exemple.com"><br>
+            <label>Assunto*</label><br>
+            <input type="text" placeholder="Assunto" name="assunto" class="form-control"><br>
+            <textarea class="form-control" name="mensagem" placeholder="Mensagem*..." rows="5"></textarea><br>
+            <div class="checkbox">
+              <label><input type="checkbox"> Receber notificações por email</label>
+            </div>
+            <button type="submit" onclick="validar_contato()" class="btn btn-default">Enviar</button>
+          </form>
+        </div> 
+        <div class="col-md-6 mail">
+          <br>
+          <i class="fa fa-reddit-alien"></i>
+          <span class="glyphicon glyphicon-envelope"></span>
+          <h5>Caso tenha alguma dúvida ou sugestão,<br> entre em contato conosco.</h5>
+        </div> 
+      </div> 
+    </div> 
+</section>
+
+<!--Comentários  -->
+<section id="comentario" class="row">
+  <div class="container">
+    <!--Formulário de comentário-->
+    <h2 class="inform titulo">Comentários</h2>    
+    <div class="col-md-6 col-lg-md-3 col-md-offset-3">
+      <form name="comentarios" method="post">
+        <div class="panel panel-primary"> 
+          <div class="panel-heading"> 
+            <h3 class="panel-title">Nome</h3> 
+            <input type="text" name="name_coment" placeholder="..." id="campo_nome_comentario">
+          </div> 
+          <div class="panel-body"> 
+            <textarea type="text" name="comentario" placeholder="Comentário aqui..." id="campo_comentario"></textarea>
+            <input type="reset" value="Limpar" class="btn btn-default">
+            <input type="submit" value="Comentar" onclick="validar_comentario()" class="btn btn-default">
+          </div> 
+        </div>
+      </form>
+      <!--Comentários já feitos-->
+      <div class="ja-comentados" class="col-md-12">
+        <div class="col-md-2">
+          <img class="img-responsive profile" src="img/profile.png">
+        </div>
+        <div class="col-md-8">
+          <h3 class="name_coment">Nome usuário</h3>
+          <p>Comentário...</p>
+        </div>
+      </div>
+      <div class="ja-comentados" class="col-md-12">
+        <div class="col-md-2">
+          <img class="img-responsive profile" src="img/leonardo.jpg">
+        </div>
+        <div class="col-md-8">
+          <h3 class="name_coment">Leonardo</h3>
+          <p>Isso é coisa de hacker!!!</p>
+        </div>
+      </div>
+      <div class="ja-comentados" class="col-md-12">
+        <div class="col-md-2">
+          <img class="img-responsive profile" src="img/ana-beatriz.jpg">
+        </div>
+        <div class="col-md-8">
+          <h3 class="name_coment">Bug do Milênio</h3>
+          <p>Que massa! Esse jogo FUNCIONA SEM INTERNET???</p>
+        </div>
+      </div>
+      <div class="ja-comentados" class="col-md-12">
+        <div class="col-md-2">
+          <img class="img-responsive profile" src="img/caio.jpg">
+        </div>
+        <div class="col-md-8">
+          <h3 class="name_coment">Terrorista</h3>
+          <p>Esse jogo poderia ter mais explosões.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- MODAL CADASTRO -->
+<div class="modal fade" id="myModalCadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!--Formulário 1-->
+      <form name="form_cadastro" action="" method="post">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <img id="alien" src="img/alien.png">
+          <h4 class="modal-title" id="myModalLabel">Criar uma conta</h4>
+        </div> 
+        <div class="modal-body">
+          <label>Dados pessoais</label><br>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" name="nome" id="uLogin" placeholder="Nome do usuário" required>
+                <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="email" class="form-control" id="uLogin" name="email" placeholder="Email" required>
+                <label for="uLogin" class="input-group-addon glyphicon glyphicon-envelope"></label>
+              </div>
+            </div> 
+
+            <div class="form-group">
+              <div class="input-group">
+                <input type="password" class="form-control" id="uPassword" placeholder="Senha" name="senha" size="20" required>
+                <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+              </div> 
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Sexo</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="sexo" value="M"> Masculino
+                  </label>
+                  <label>
+                    <input type="radio" name="sexo" value="F"> Feminino
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label>Data de nascimento</label><br>
+                <input type="date" name="data_nasc">
+              </div>  
+            </div><br>
+            <label>Localização</label>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" id="uLogin" name="uf" placeholder="UF" style="width: 20%;" required>
+                <input type="text" class="form-control" id="uLogin" name="cidade" placeholder="Cidade" style="width: 80%;" required>
+                <label for="uLogin" class="input-group-addon glyphicon glyphicon-map-marker"></label>
+              </div>
+            </div> 
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="form-control btn btn-primary" onclick="validar_cadastro()" value="Cadastrar"/>
+        </div> 
+      </form>
+      </div>
+    </div>
+  </div>
+   <!-- MODAL LOGIN -->
+  <div class="modal fade" id="myModalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <img id="alien" src="img/alien.png">
+          <h4 class="modal-title" id="myModalLabel">Login</h4>
+        </div> 
+      <!--Formulário 2-->
+      <form name="form_login" action="" method="post">
+          <div class="modal-body">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="email" class="form-control" id="uLogin" name="email" placeholder="Email" required>
+                  <label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+                </div>
+              </div> 
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="password" class="form-control" id="uPassword" name="senha" placeholder="Senha" required>
+                  <label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+                </div>
+              </div>
+              <input type="checkbox" value="marcado"> Manter-me conectado.
+          </div>
+        <div class="modal-footer">
+          <input type="submit" value="Entrar" onclick="validar_login()" class="form-control btn btn-primary"/>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Voltar ao Topo-->
+  <p id="voltar-topo" style="position: fixed;bottom: 1%;right: 6%;font-size: 4em !important;">
+    <a href="#" class="scroll-to"><span class="seta" title="Voltar ao topo" style="font-size: 60px;">^</span></a>
+  </p>
+
+<!-- Rodapé -->
+<footer class="container-fluid text-center">
+  <p><b>Contatos: adlemsilva@gmail.com <br/>
+  brenosilva.ifrn@gmail.com</b><br>
+  <h4>Web Design - TADS 1.1404.1M - IFRN 2017.1</h4></p>
+</footer>
+
+</body>
+</html>

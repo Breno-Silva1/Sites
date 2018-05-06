@@ -1,0 +1,260 @@
+* {
+    font-family: "Century Gothic", "Helvetica";
+}
+
+
+/*============== HOME ==============*/
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.navbar-inverse {
+    background-color: rgba(24, 24, 85, 0.95) !important;
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
+}
+.jumbotron {
+    background-image: url("../img/Banner-alien.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 120px !important;
+    margin-bottom: 0px !important;
+}
+.inform {
+   color: #141452 !important;
+}
+#logo {
+    width: 350px;
+    margin: 0 auto;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #679c4b !important;
+    color: #fff !important;
+    transition: 0.5s all;
+}
+.navbar-brand img {
+    width: 50px !important;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #86c44c !important; 
+}
+#midias {
+    background-image: url("../img/bg.png");
+    /*background: #141452;*/
+    margin-top: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#midias .icon {
+    font-size: 45px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: #9be233;
+}
+.fa-angle-double-right, a{
+    color: #9be233 !important;
+    font-size: 15px !important;
+}
+.linha-vertical {
+    border-right: 1px solid rgba(155, 226, 51, 0.24);
+}
+
+
+/*============== SOBRE O JOGO ==============*/
+
+#sobre {
+    padding-top: 100px;
+}
+.titulo {
+    text-align: center;
+    padding: 0px 0px 50px 0px;
+    text-transform: uppercase;
+    font-family: "Century Gothic";
+}
+.titulo-inverse {
+    color: #fff !important;
+}
+.center {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/*============== SOBRE OS DESENVOLVEDORES ==============*/
+
+#desenvolvedores {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.site-bg {
+    background-image: url("../img/banner-alien-desenvolvedores.png");
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    text-align: justify;
+    background-size: contain;
+}
+.site-content {
+    background: #f2f2f2;
+}
+.desenvolvedor {
+    text-align: center;
+    color: #a2ce52;
+}
+
+
+/*============== CÓDIGO ==============*/
+
+#codigo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../img/bg-codigo.png");
+    background-size: cover;
+}
+#codigo1, #codigo2, #codigo3, #codigo4 {
+    padding-left: 5px;
+}
+.pd1 {
+    padding-left: 4%;
+}
+.pd2 {
+    padding-left: 8%;
+}
+.rolamento {
+    width: 100%;
+    height: 400px;
+    overflow: scroll !important;
+}
+.nav-tabs {
+    background: #dbdbe6 !important;
+    border-bottom: 1px solid #4a247d !important;
+}
+.tab-content {
+    background: whitesmoke !important;
+}
+
+
+/*============== CONTATO ==============*/
+
+#contato {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.form-control {
+    border: 1px solid #a6a6de !important;
+}
+.mail {
+    text-align: center;
+    font-size: 80px;
+    color: #23235d;
+}
+
+
+/*============== COMENTÁRIO ==============*/
+
+#comentario {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+form .glyphicon {
+    color: #28286f !important;
+}
+.panel-primary>.panel-heading {
+    color: #86c44c !important;
+    background-color: #23235d !important;
+    border-color: #23235d !important;
+}
+.panel-body {
+    background: #fff !important;
+    text-align: end;
+}
+#voltar-topo {
+    font-family: "cursive" !important;
+    color: #86c44c;
+}
+#voltar-topo a:hover {
+    color: #6aa235 !important;
+    text-decoration: none !important;
+}
+.coment {
+    background: #23235d;
+    border-color: #23235d;
+}
+.coment_body {
+    background: #e1e8dd;
+    border-color: #e1e8dd;
+    width: 100%;
+}
+#campo_nome_comentario {
+    background: none;
+    border: none;
+    border-bottom: 1px solid;
+}
+#campo_comentario {
+    background: none;
+    width: 100%;
+}
+.ja-comentados {
+    height: 100px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #c1c6d1;
+}
+.name_coment {
+    margin: 3px 0px !important;
+}
+.profile {
+    width: 50px;
+}
+@media only screen and (max-width: 500px) {
+    .ja-comentados {
+        height: 10%;
+    }
+}
+
+
+/*============== RODAPÉ ==============*/
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+footer {
+    font-family: "Helvetica";
+    background-color: #23235d;
+    color: #fff;
+}
+
+
+/*============== MODAIS ==============*/
+
+.modal-header {
+    text-align: center;
+    font-weight: bold;
+    background-image: url("../img/banner-alien-modal.png");
+    background-size: cover;
+}
+#alien {
+	width: 50px;
+}
+#myModalLabel {
+	color: #a2ce52;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: "Century Gothic"
+}
+.modal-footer input {
+	background: #1d2758;
+	color: #a2ce52;
+}
+
+div ul li a {
+    color: #23235d !important;
+}
+
