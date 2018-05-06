@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+  	<meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <title>LITERART</title>
+	 
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link href="css/animate-custom.css" rel="stylesheet">
+ 
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top col-md-12">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon icon-menu" style="font-size:30px; color:#fff;"></span>
+          </button>
+           <a href="#headerwrap" class="navbar-brand hidden-xs hidden-sm scroll"><img src="img/logo_menu.png" alt="Logo da Literart" class="nav-brand"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#headerwrap" class="smoothScroll">Início</a></li>
+			<li> <a href="#sobre" class="smoothScroll">Sobre Nós</a></li>
+			<li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown"  href="#" aria-expanded="false">Postagem<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                	<li><a href="#postagens" class="smoothScroll">Em destaque</a></li>
+                  	<li> <a href="postagens.jsp" class="smoothScroll">Ver todas</a></li>
+                </ul>
+            </li>
+			<li> <a href="#contact" class="smoothScroll">Contato</a></li>
+		  </ul>
+			
+		  <div class="butoes">
+		   <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalCadastro">Cadastrar</button>
+		   <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Login</button>
+		  </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    </div>
+
+    <!-- Modais de acesso LOGIN -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Já sou cadastrado</h4>
+				</div> <!-- /.modal-header -->
+				
+			<form action="Login.do" method="post">
+					<div class="modal-body">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="email" class="form-control" id="uLogin" name="email" placeholder="Email" required>
+									<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+								</div>
+							</div> <!-- /.form-group -->
+	
+							<div class="form-group">
+								<div class="input-group">
+									<input type="password" class="form-control" id="uPassword" name="senha" placeholder="Senha" required>
+									<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+								</div> <!-- /.input-group -->
+							</div> <!-- /.form-group -->
+					</div> <!-- /.modal-body -->
+				
+				<div class="modal-footer">
+					<input type="submit" value="Entrar" class="form-control btn btn-primary"/>
+				</div> <!-- /.modal-footer -->
+			</form>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+    <!--/Modais de acesso -->
+
+        <!-- Modais de acesso CADASTRO -->
+	<div class="modal fade" id="myModalCadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<form role="form" action="Cadastrar.do" method="post">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Criar uma conta</h4>
+				</div> <!-- /.modal-header -->
+
+				<div class="modal-body">
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" name="nome" id="uLogin" placeholder="Nome do usuário" required>
+								<label for="uLogin" class="input-group-addon glyphicon glyphicon-user"></label>
+							</div>
+						</div> <!-- /.form-group -->
+
+						<div class="form-group">
+							<div class="input-group">
+								<input type="email" class="form-control" id="uLogin" name="email" placeholder="Email" required>
+								<label for="uLogin" class="input-group-addon glyphicon glyphicon-envelope"></label>
+							</div>
+						</div> <!-- /.form-group -->
+
+						<div class="form-group">
+							<div class="input-group">
+								<input type="password" class="form-control" id="uPassword" placeholder="Senha" name="senha" size="20" required>
+								<label for="uPassword" class="input-group-addon glyphicon glyphicon-lock"></label>
+							</div> <!-- /.input-group -->
+						</div> <!-- /.form-group -->
+
+						<label>Sexo</label><br>
+						<div class="radio">
+							<label>
+								<input type="radio" name="sexo" value="M"> Masculino
+							</label>
+							<label>
+								<input type="radio" name="sexo" value="F"> Feminino
+							</label>
+						</div> <!-- /.checkbox -->
+
+						<label>Localização</label>
+						<div class="form-group">
+							<div class="input-group">
+								<input type="text" class="form-control" id="uLogin" name="uf" placeholder="UF" style="width: 45px;" required>
+								<input type="text" class="form-control" id="uLogin" name="cidade" placeholder="Cidade" style="width: 174px;" required>
+								<label for="uLogin" class="input-group-addon glyphicon glyphicon-map-marker"></label>
+							</div>
+						</div> <!-- /.form-group -->
+
+				</div> <!-- /.modal-body -->
+
+				<div class="modal-footer">
+					<input type="submit" class="form-control btn btn-primary" value="Cadastrar"/>
+				</div> <!-- /.modal-footer -->
+			</form>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+    <!--/Modais de acesso -->
+  
+		<!-- ==== HEADERWRAP ==== -->
+	    <div id="headerwrap" id="inicio">
+			<header class="clearfix">
+	  		 		<img src="img/logo.png" alt="Logo da Literart" class="img-responsive img-center w3-animate-zoom">
+	  		 		<p class="titulo w3-animate-bottom">LITERARTE</p>
+	  		 		<p class="subtitulo w3-animate-bottom">Seu Blog Da Boa Literatura</p>
+	  		</header>	    
+	    </div><!-- /headerwrap -->
+
+		<!-- ==== GREYWRAP ==== -->
+		<div id="greywrap">
+			<div class="row">
+				<div class="col-lg-4 callout">
+					<span class="icon glyphicon glyphicon-book"></span>
+					<h2>Postagens</h2>
+					<p>Toda semana postamos novos conteúdos: resenhas, indicações, e comentários sobre os mais variados livros, aqui no nosso blog.</p>
+				</div><!-- col-lg-4 -->
+					
+				<div class="col-lg-4 callout">
+					<img src="img/blogueiros.png" class="img-sobre-nos">
+					<h2>Sobre Nós</h2>
+					<p>
+						O LITERATE é administrado pelos blogueiros Breno Silva e Bruna Silva, amantes da boa literatura brasileira e críticos da literatura internacional.
+						<br>
+						<a href="#blogueiros" class="scroll icon icon-link ler-mais"> Ler mais</a>
+					</p>
+				</div><!-- col-lg-4 -->	
+				
+				<div class="col-lg-4 callout">
+					<span class="icon glyphicon glyphicon-envelope"></span>
+					<h2>Contato</h2>
+					<p>Nos envie sua sugestão de livro, que faremos o possível para criar um conteúdo todo especial para ele.</p>
+				</div><!-- col-lg-4 -->	
+			</div><!-- row -->
+		</div><!-- greywrap -->
+
+				<!-- ==== GREYWRAP ==== -->
+		<div id="sobre">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 centered">
+						<img class="img-responsive" src="img/macbook.gif" alt="Marketing do site">
+					</div>
+					<div class="center">
+						<div class="col-lg-4 align-center">
+							<h2>SOBRE O LITERARTE</h2>
+							<p>Trazemos para vocês, nossos seguidores, assuntos relevantes sobre a Literatura e a Arte, com ênfase nas publicações literarias brasileiras e internacionais.</p>
+							<p>
+								<a href="#" class="icon icon-twitter"></a>
+								<a href="#" class="icon icon-facebook"></a>
+								<a href="#" class="icon icon-flickr"></a>
+								
+							</p>
+						</div>	
+					</div>				
+				</div><!-- row -->
+			</div>
+			<br>
+			<br>
+		</div><!-- greywrap -->
+		
+		<!-- ==== BLOG ==== -->
+		<div class="container" id="blogueiros">
+		<br>
+			<div class="row">
+				<br>
+				<h1 class="centered">QUEM SOMOS?</h1>
+				<hr>
+				<br>
+				<br>
+			</div><!-- /row -->
+			
+			<div class="row">
+				<div class="col-lg-6 blog-bg">
+					<div class="col-lg-4 centered">
+					<br>
+						<p><img class="img img-circle" src="img/team/team04.jpg" width="60px" height="60px"></p>
+						<h4>Breno Silva</h4>
+						<a href="#" class="icon icon-twitter"></a>
+						<a href="#" class="icon icon-facebook"></a>
+						<a href="#" class="icon icon-flickr"></a>
+
+					</div>
+					<div class="col-lg-8 blog-content">
+						<h2>Ler é viajar</h2>
+						<p>Fazemos referência e preferência dos gêneros de conteúdos apresentados nas diversas abordagens da leitura; mas não importa, o que é bom mesmo é caminhar pelos meios virtuais, pelas letras, pelas imagens, cores, pela vida, pelos sabores, pelo encantamento.</p>
+						<p>Ler então passa a ser uma atitude visceral para construção e desenvolvimento pleno do homem em sua busca por necessidades e, portanto, obter melhorias emm qualidade de vida.</p>
+						<br>
+					</div>
+				</div><!-- /col -->
+				
+				<div class="col-lg-6 blog-bg">
+					<div class="col-lg-4 centered">
+					<br>
+						<p><img class="img img-circle" src="img/team/team03.jpg" width="60px" height="60px"></p>
+						<h4>Bruna Silva</h4>
+						<a href="#" class="icon icon-twitter"></a>
+						<a href="#" class="icon icon-facebook"></a>
+						<a href="#" class="icon icon-flickr"></a>
+
+					</div>
+					<div class="col-lg-8 blog-content">
+						<h2>Vivendo e lendo</h2>
+						<p>A leitura desenvolve a sensibilidade, aumenta o potencial criativo e cognitivo, ajuda na formação moral do indivíduo, desvela valores e crenças antes desconhecidos, levanta a autoestima, enfim, muitas vezes até cura e regenera estados enfermos da alma e do espírito.</p>
+						<p>Fazendo a interação com o outro por meio da comunicação, que pode ser manifestada de várias formas: linguagem visual, plástica, oral, escrita, virtual, corporal e outras certamente já atualizadas.</p>
+						<br>
+					</div>
+				</div><!-- /col -->
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /container -->
+
+		<!-- ==== PORTFOLIO ==== -->
+		<div class="container" id="postagens">
+		<br>
+			<div class="row">
+				<br>
+				<h1 class="centered">POSTAGENS EM DESTAQUE</h1>
+				<hr>
+				<br>
+				<br>
+			</div><!-- /row -->
+			<div class="container">
+			<div class="row">	
+			
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="img/portfolio/folio01.jpg" alt="postagens recentes">
+							<figcaption>
+								<h5>Eu me chamo Antônio</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Ver mais</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="img/portfolio/folio02.jpg" alt="postagens recentes">
+							<figcaption>
+								<h5>Extraordinário</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Ver mais</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="img/portfolio/folio03.jpg" alt="postagens recentes">
+							<figcaption>
+								<h5>Grande Sertão: Ver...</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Ver mais</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+			</div><!-- /row -->
+
+				<!-- PORTFOLIO IMAGE 4 -->
+			<div class="row">	
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="img/portfolio/folio04.jpg" alt="postagens recentes">
+							<figcaption>
+								<h5>O Menino Do Pijama...</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Ver mais</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="img/portfolio/folio05.jpg" alt="postagens recentes">
+							<figcaption>
+								<h5>A Menina Que Não...</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Ver mais</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				
+				<!-- PORTFOLIO IMAGE 6 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="img/portfolio/folio06.jpg" alt="postagens recentes">
+							<figcaption>
+								<h5>As pelejas de Ojuara</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-default btn-lg">Ver mais</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				<div class="center">
+					<a href="postagens.jsp" class="scroll icon icon-link ler-mais"> Ver Mais</a>
+				</div>
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /row -->
+	</div><!-- /container -->
+		
+	<div class="container" id="contact">
+		<div class="row centered">
+			<br>
+				<h1 class="centered">FALE CONOSCO</h1>
+				<hr>
+				<br>
+				<br>
+				<div class="col-lg-4">
+				<h3>Email</h3>
+					<p>
+						<span class="icon icon-envelop"></span> <a href="#"> literarte.blog@gmail.com.br</a> <br/>
+					</p>
+				</div><!-- col -->
+				
+				<div class="col-lg-4">
+					<h3>Twitter</h3>
+					<p>
+						<span class="icon icon-twitter"></span> <a href="#"> @blog_literarte </a> <br/>
+					</p>
+				</div><!-- col -->
+			
+				<div class="col-lg-4">
+					<h3>Facebook</h3>
+					<p>
+						<span class="icon icon-facebook"></span> <a href="#"> Blog Literarte </a> <br/>
+					</p>
+				</div><!-- col -->
+				
+		</div><!-- row -->
+	</div><!-- container -->
+
+
+	<p id="voltar-topo" style="position: fixed;bottom: 1%;right: 6%;font-size: 3em;">
+		<a href="#" class="scroll-to"><span class="seta" title="Voltar ao topo">^</span></a>
+	</p>
+	<div id="footerwrap">
+		<div class="container">
+			<h4>Desenvolvido pelo <a href="#navbar-main">LITERARTE</a> - Agosto de 2016 &#169;</h4>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+		
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/retina.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="js/jquery-func.js"></script>
+
+
+	<script async="async" type="text/javascript">
+      $(function() {
+        $('#voltar-topo').hide();
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $('#voltar-topo').fadeIn();
+          } else {
+            $('#voltar-topo').fadeOut();
+          }
+        });
+        $('#voltar-topo').click(function() {
+          $('html, body').animate({
+            scrollTop: 0
+          });
+        });
+      });
+
+    jQuery(document).ready(function($) { 
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+		});
+	});
+    $('.dropdown-toggle').dropdown();
+    </script>
+  </body>
+</html>

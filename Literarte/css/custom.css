@@ -1,0 +1,61 @@
+.img-center {
+    margin: auto;
+    width: 320px;
+    padding-top: 50px;
+ }
+ .titulo {
+ 	padding-top: 50px;
+ 	font-family: "Tw Cen MT";
+    font-weight: bold !important;
+    font-size: 80px !important;
+ }
+
+ .subtitulo {
+ 	font-family: "tw cen mt";
+    font-size: 25px !important;
+    color: #ef9336 !important;
+    text-shadow: none !important;
+ }
+ 
+ .buttonFazerLogin {
+ 	font-family: century gothic;
+    background: none;
+    color: #cb673c;
+    font-size: 20px;
+    padding: 6px 30px;
+    margin-top: 20px;
+    margin-left: 10%;
+    border: 1px solid #cb673c;
+}
+ .buttonFazerLogin:hover {
+
+}
+ 
+ .center {
+	text-align: center !important;
+}
+
+@media screen and (max-width: 769px) {
+ .titulo {
+    font-size: 40px !important;
+}
+
+/*****Voltar ao Topo*****
+*************************/
+
+#voltar-topo {
+	position: fixed;
+    bottom: 1%;
+    right: 6%;
+    font-size: 3em;
+}
+#voltar-topo a {
+	color: rgba(169, 68, 66, 0.84);
+}
+#voltar-topo a:hover {
+	color: #a94442;
+}
+.sem-position {
+	position: unset;
+	margin-top: 30px;
+}
