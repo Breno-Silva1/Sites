@@ -1,0 +1,72 @@
+/*---------------------
+Table of contents
+
+0. Colors
+1. Layout
+2. Buttons
+3. Fonts
+4. Home
+5. Images
+6. Responsive
+---------------------*/
+
+
+/* === 0. Colors === */
+:root {
+  --azul: #3196FE;
+  --azul-royal: #325096;
+  --amarelo: #EDB516;
+  --vermelho: #DF0031;
+}
+
+.branco { color: white; }
+.azul { color: var(--azul); }
+.azul-royal { color: var(--azul-royal); }
+.amarelo { color: var(--amarelo); }
+.vermelho { color: var(--vermelho); }
+
+/* === 1. Layout === */
+
+.modal-content { background-color: var(--azul); }
+.modal-right{width: 200px;}
+.modal-footer { border: none !important; }
+.child-footer {
+  width: 90%;
+  font-size: 12px;
+}
+
+.hr-modal {
+  border-color: #fff;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  border-top-width: 2px;
+}
+
+/* === 2. Buttons === */
+.btn-radius {
+  width: 120px;
+  border-radius: 50px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.btn-branco {
+  color: var(--azul);
+  background: white;
+}
+
+.btn-branco-outline {
+  color: white;
+  background: none;
+  border-color: white;
+}
+
+/* === Fonts === */
+
+.title-modal {
+  padding: 45px 0px;
+  font-weight: bold;
+}
+
+/* === 6. Images === */
+.banner { width: 100%; }
