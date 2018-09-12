@@ -8,6 +8,7 @@ Table of contents
 4. Home
 5. Images
 6. Responsive
+7. Outros
 ---------------------*/
 
 
@@ -19,7 +20,7 @@ Table of contents
   --vermelho: #DF0031;
 }
 
-.branco { color: white; }
+.branco { color: white !important; }
 .azul { color: var(--azul); }
 .azul-royal { color: var(--azul-royal); }
 .amarelo { color: var(--amarelo); }
@@ -41,6 +42,18 @@ Table of contents
   margin-bottom: 5px;
   border-top-width: 2px;
 }
+
+.recuperar-senha {
+  text-align: right;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+a .recuperar-senha {
+  color: white;
+}
+
 
 /* === 2. Buttons === */
 .btn-radius {
@@ -67,6 +80,17 @@ Table of contents
   padding: 45px 0px;
   font-weight: bold;
 }
+.modal label {
+  font-size: 11px;
+  font-weight: bold;
+}
 
 /* === 6. Images === */
 .banner { width: 100%; }
+
+/* === 8. Outros === */
+
+.modal input {
+  height: 25px;
+  border-radius: 0px;
+}
